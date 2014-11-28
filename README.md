@@ -5,6 +5,7 @@
 
 ![Spike Detector GUI](spike-detector.png)
 
+<!--start-->
 This module uses a simple threshold to detect spikes. The cell can be in one of 5 states:
 
     0: Looking for voltage to cross above threshold;
@@ -15,7 +16,7 @@ This module uses a simple threshold to detect spikes. The cell can be in one of 
     -1: Reset state. Will reset if cell hasn’t spike since the minimum interval
 
 In addition, you can set a refractory period, the minimum interval that must go by before another spike can be detected again.
-
+<!--end-->
 
 ####Input Channels
 1. input(0) – “Vm” : Membrane potential
