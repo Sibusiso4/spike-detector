@@ -63,8 +63,9 @@ SpikeDetect::SpikeDetect(void) :
         "  4:   Depolarization block. Cell has been above threshold for more than 100ms.<br>"
         " -1:   Reset state. Will reset if cell hasn't spiked since the minimum interval</p>");
   createGUI(vars, num_vars);
-  update( INIT);
+  update( INIT );
   refresh();
+  QTimer::singleShot(0, this, SLOT(resizeMe()));
 }
 
 SpikeDetect::~SpikeDetect(void)
