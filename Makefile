@@ -1,8 +1,9 @@
-PLUGIN_NAME = spike_detector
 
-HEADERS = spike-detector.h
+PLUGIN_NAME = SpikeDetect
 
-SOURCES = spike-detector.cpp
+HEADERS = SpikeDetect.h
+
+SOURCES = SpikeDetect.cpp
 
 LIBS = 
 
