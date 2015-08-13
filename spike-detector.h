@@ -32,8 +32,7 @@ class SpikeDetect : public DefaultGUIModel
 	protected:
 
 		// run each time model parameters are updated
-		virtual void
-		update(DefaultGUIModel::update_flags_t);
+		virtual void update(DefaultGUIModel::update_flags_t);
 
 		private:
 
