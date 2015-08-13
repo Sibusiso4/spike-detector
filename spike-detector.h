@@ -21,32 +21,30 @@
 class SpikeDetect : public DefaultGUIModel
 {
 
-public:
+	public:
 
-  SpikeDetect(void);
-  virtual
-  ~SpikeDetect(void);
+		SpikeDetect(void);
+		virtual ~SpikeDetect(void);
 
-  // the main function runs every time step, contains model logic
-  virtual void
-  execute(void);
+		// the main function runs every time step, contains model logic
+		virtual void execute(void);
 
-protected:
+	protected:
 
-  // run each time model parameters are updated
-  virtual void
-  update(DefaultGUIModel::update_flags_t);
+		// run each time model parameters are updated
+		virtual void
+		update(DefaultGUIModel::update_flags_t);
 
-private:
+		private:
 
-  // parameters
-  double thresh;
-  double min_int;
+		// parameters
+		double thresh;
+		double min_int;
 
-  // time of last spike
-  double last_spike;
+		// time of last spike
+		double last_spike;
 
-  // the internal state variable, sent as output
-  long long count;
-  int state;
+		// the internal state variable, sent as output
+		long long count;
+		int state;
 };
