@@ -19,7 +19,7 @@ In addition, you can set a refractory period, the minimum interval that must go 
 <!--end-->
 
 ####Input Channels
-1. input(0) – “Vm” : Membrane potential
+1. input(0) – “Vm” : Membrane potential (V)
 
 ####Output Channels
 1. output(0) – “Spike State” : see description of module above
